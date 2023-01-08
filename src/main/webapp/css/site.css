@@ -1,0 +1,516 @@
+* {
+	--div-bg-color: white;
+	--main-bg-color: #ede8e8;
+	--border: 3px solid gray;
+	--border-radius: 10px;
+	--a-link-color: #2f5232;
+	--a-hover-color: #c9c961;
+}
+
+body {
+	background-color: var(--main-bg-color);
+	font-size: 16px;
+}
+
+.container {
+	margin-left:0;
+	padding-bottom: 20px;
+}
+
+.content {
+	background-color: var(--main-bg-color);
+	position: relative;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+.form-control {
+	display: inline-block;
+}
+
+.navbar {
+	position: relative;
+}
+
+#logo {
+	 width: 50%;
+}
+
+.header-links li a {
+	font-size: 1.7em;
+	font-family: 'Odibee Sans', cursive;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-family: 'Bebas Neue', cursive; 
+	color: #2f5232;
+	font-size: 4em;
+}
+
+h2 {
+	font-family: 'Bebas Neue', cursive; 
+	color: #2f5232;
+	font-size: 2.5em;
+	margin: 0;
+}
+
+h4 {
+	font-family: 'Bebas Neue', cursive; 
+	color: #2f5232;
+	font-size: 1.5em;
+	margin: 0;
+}
+
+label {
+	display: block;
+}
+
+th {
+	font-family: 'Bebas Neue', cursive; 
+	font-size: 1.1em;
+}
+
+#quote blockquote {
+	font-family: 'Calistoga', cursive;
+	color: #7b8077;
+	font-size: 1.5em;
+}
+
+#quote cite {
+	font-family: 'Calistoga', cursive;
+	color: #7b8077;
+	font-size: 1.2em;
+}
+
+#title-toggle label {
+	display: inline;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+h2 a {
+	margin-left: 20px;
+}
+
+#home-page a:link {
+	color: var(--a-link-color);
+}
+
+#home-page a:hover {
+  color: var(--a-hover-color);
+  text-decoration: none;
+}
+
+#home-page {
+	background-color: var(--div-bg-color);
+	padding: 0px 20px 20px 20px;
+	border: var(--border);
+	border-radius: var(--border-radius);
+}
+
+#home-page img {
+	width: 100%;
+	padding: 10px;
+}
+
+#home-page h2 {
+	padding-top: 40px;
+}
+
+.park {
+	display:flex;
+	padding: 0px 0px 40px 0px;
+}
+
+.park-info {
+	margin-top: 20px;
+}
+
+#park-picture {
+	display: block;
+	width: 40%;
+	margin: 10px;
+}
+
+#park-details {
+	width: 60%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+}
+
+#park-details tr {
+	display: inline;
+	text-align: left;
+}
+
+#detailImage {
+	width:100%;
+	height: 350px;
+	object-fit: cover;
+}
+
+#weather {
+	background-color: var(--div-bg-color);
+	width: 100%;
+	border: var(--border);
+	border-radius: var(--border-radius);
+	padding: 10px 40px 10px 40px;
+	margin: 10px 10px 10px 10px;
+}
+
+#five-day-forecast {
+	display: flex;
+	justify-content: space-between;
+}
+
+#week {
+	display: flex;
+	flex-direction: column;
+	width: 15%;
+}
+
+#week img {
+	width: 100%;
+	height:auto;
+}
+#today {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+}
+
+#today img {
+	width: 100%;
+	height: auto;
+}
+
+#todays-info {
+	display: flex;
+	align-items: center;
+}
+
+#advisory {
+	padding: 0;
+}
+
+#advisory ul {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#advisory th {
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+.error {
+	color: red;
+}
+
+#park-information {
+	display: flex;
+}
+
+
+table {
+	padding: 20px;
+	margin: 0;
+}
+
+th {
+	padding-right: 10px;
+	padding-bottom: 10px;
+	text-align: right;
+}
+
+td {
+	padding-bottom: 10px;
+}
+#info {
+	background-color: var(--div-bg-color);
+	width: 30%;
+	padding: 15px;
+	border: var(--border);
+	border-radius: var(--border-radius);
+	margin: 10px;
+}
+
+#description {
+	width: 50%;
+	padding:  15px;
+	margin: 0px 0px 0px 10px;
+}
+
+#description p {
+	padding-top: 30px;
+}
+
+#description-quote {
+	background-color: var(--div-bg-color);
+	width: 70%;
+	display: flex;
+	border: var(--border);
+	border-radius: var(--border-radius);
+	margin: 10px;
+	margin-right: 0px;
+}
+
+#quote {
+	width: 50%;
+	padding: 15px;
+	margin: 0px 10px 0px 10px;
+	align-self: center;
+}
+
+#toggle {
+	display: flex;
+	overflow: hidden;
+}
+
+#toggle input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+#toggle label {
+	background-color: #e4e4e4;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	margin-right: -1px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+}
+
+#toggle label:hover {
+	cursor: pointer;
+}
+
+#toggle input:checked + label {
+	background-color: #a5dc86;
+	box-shadow: none;
+}
+
+#toggle label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+#toggle label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}
+
+hr.line-gray-center {
+    border: 0;
+    margin: 0px;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+hr:last-of-type {
+    border: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+#favorite-parks {
+	background-color: var(--div-bg-color);
+	padding: 20px;
+	border: var(--border);
+	border-radius: var(--border-radius);
+}
+
+#favorite-parks-park {
+	display: flex;
+}
+
+#votes {
+	width: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: solid 3px #370c09;
+	border-radius: var(--border-radius);
+	margin: 10px;
+	height: 150px;
+	align-self: center;
+	background-color: #e8e8e8;
+}
+
+#votes h2 {
+	font-size: 2.5em;
+	color: #370c09;
+	padding: 5px;
+}
+
+#votes h3 {
+	font-family: 'Ewert', cursive;
+	font-size: 3em;
+	color: #370c09;
+}
+
+#favorite-parks-image {
+	width: 25%;
+	padding: 10px;
+	align-self: center;
+}
+
+#favorite-parks-info {
+	width: 65%;
+	padding: 15px;
+}
+
+#favorite-parks-image a img {
+	width: 100%;
+	border-radius: 5px;
+	padding: 2px;
+	border: solid 3px #370c09;
+}
+
+img {
+	border-radius: 3px;
+}
+
+#survey {
+	border: 3px solid gray;
+	border-radius: var(--border-radius);
+	background-color: var(--div-bg-color);
+	padding: 15px;
+}
+
+#survey table {
+	width: 85%;
+	margin: auto;
+}
+
+#survey th {
+	width: 50%;
+	font-size: 3rem;
+}
+
+#survey td {
+	width: 50%;
+}
+
+.survey-input {
+	width:100%;
+	height:50px;
+	font-size: 2rem;
+	padding:5px;
+}
+
+.submit-button {
+	width: 100%;
+	height: 50px;
+	background-color: var(--a-link-color);
+	border-radius: 2px;
+	font-size: 2rem;
+	color: white;
+}
+
+.submit-button:hover {
+	background-color: var(--a-hover-color);
+	color: black;
+}
+
+#plan-trip {
+	display:flex;
+	flex-direction: row;
+}
+
+#search {
+	margin-right: 20px;
+} 
+
+#trip-planner div {
+	margin: 0px 0px 20px 0px;
+}
+
+#trip-results {
+	display:flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 10px;
+	border: var(--border);
+	border-radius: var(--border-radius);
+	padding: 15px;
+	background-color: var(--div-bg-color);
+}
+
+.align-left {
+	text-align: left;
+	padding: 0px 30px 0px 0px;
+}
+
+.trip-result {
+	display: flex;
+	flex-direction: row;
+	padding: 0px 0px 0px 0px;
+	margin: 25px 0px 25px 0px;
+}
+
+.trip-result-image {
+	flex-basis:50%;
+	height: 200px;
+	object-fit: cover;
+	margin: 0px 10px 0px 0px;
+}
+
+.result-park-info {
+	flex-basis: 50%;
+}
+
+.result-park-info a {
+	margin: 0px;
+	padding: 0px;
+	color: var(--a-link-color);
+}
+
+.result-park-info a:hover {
+	color: var(--a-hover-color);
+	text-decoration: none;
+}
+
+.checkbox {
+	width: 50px;
+}
+
+.no-results {
+	width: 100%;
+	
+}
+
+.back-to-top {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background-color: var(--a-link-color);
+	padding:10px;
+	color: white !important;
+	text-decoration: none;
+}
+
+.back-to-top:hover {
+	background-color: var(--a-hover-color);
+	color: black !important;
+	text-decoration: none;
+}
+
+.bordered {
+	border: var(--border);
+	border-radius: var(--border-radius);
+	background-color: var(--div-bg-color);
+	padding: 0px 0px 15px 25px;
+}
